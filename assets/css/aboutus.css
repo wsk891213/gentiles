@@ -1,0 +1,260 @@
+
+.section-company {
+  padding: 40px 20px;
+}
+
+.box-thumb {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.box-thumb .thumb-img{
+  width: 100%;
+}
+
+.desc-area {
+  overflow: hidden;
+  position: relative;
+  padding-top: 20px;
+}
+
+.desc-area__tit .tit-desc {
+  overflow: hidden;
+  font-size: 2.6rem;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  margin-left: 10%
+}
+
+.list-info {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.list-info__item {
+  position: relative;
+  overflow: hidden;
+  padding-left: 20px;
+  font-size: 1.6rem;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.list-info__item::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--color-bk);
+}
+
+.list-info__item + .list-info__item {
+  margin-top: 12px;
+}
+
+.section-cont {
+  padding: 40px 20px;
+  background-color: var(--color-lightgray);
+}
+
+.list-cont {
+  display: block;
+  overflow: hidden;
+}
+
+.list-cont__item + .list-cont__item {
+  margin-top: 40px;
+}
+
+.inner-cont--right::before {
+  left: 0;
+}
+
+.inner-cont::before {
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 56.25%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.inner-cont--01::before {
+  background-image: url(../images/image2.jpg);
+}
+
+.inner-cont--02::before {
+  background-image: url(../images/image3.png);
+}
+
+.inner-cont--03::before {
+  background-image: url(../images/image4.jpg);
+}
+
+.box-cont {
+  margin-top: 40px;
+}
+
+.emph-cont {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-blue);
+}
+
+.tit-cont {
+  display: block;
+  overflow: hidden;
+  margin-top: 12px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.desc-cont {
+  overflow: hidden;
+  margin-top: 16px;
+  font-size: 1.4rem;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+
+@media screen and (min-width: 768px) { /* min Tablet */
+
+  .desc-area{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .desc-area__tit {
+    width: 40%;
+    min-width: 40%;
+  }
+
+  .desc-area__tit .tit-desc {
+    overflow: hidden;
+    font-size: 3.0rem;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+  }
+
+  .desc-area__info {
+    padding-left: 16px;
+  }
+
+  .list-info{
+    margin-top: 0;
+  }
+  
+  .section-cont{
+    padding: 40px 20px;
+  }
+
+  .inner-cont {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    padding-right: 500px;
+    min-height: 300px;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }  
+
+  .inner-cont::before {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 360px;
+    height: 280px;
+    padding-top: 0;
+    transform: translateY(-50%);
+  }
+  
+  .inner-cont--right {
+    padding-left: 540px;
+    padding-right: 0;
+  }
+
+  .inner-cont--right {
+    padding-left: 600px;
+    padding-right: 0;
+  }
+
+  .box-cont {
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+  .emph-cont {
+    font-size: 1.4rem;
+  }
+
+  .tit-cont{
+    font-size: 2.0rem;
+  }
+
+  .desc-cont{
+    font-size: 1.6rem;
+  }
+  
+}
+
+
+@media screen and (min-width: 1024px) { /* min PC */
+  .section-company {
+    padding: 80px 40px;
+  }
+  
+  .box-thumb {
+    padding-top: 60px;
+  }
+
+  .desc-area{
+    padding-top: 40px;
+  }
+
+  .section-cont{
+    padding: 80px 40px 80px;
+  }
+
+  .inner-cont::before {
+    width: 480px;
+    height: 300px;
+  }
+}

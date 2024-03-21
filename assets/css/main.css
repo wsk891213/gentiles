@@ -1,0 +1,347 @@
+.info-area {
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.list-cont {
+  display: block;
+}
+
+.list-cont .box-thumb {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.list-cont>li:nth-of-type(1) .box-thumb {
+  background-image: url(../images/dummy/dummy1.jpg);
+}
+
+.list-cont>li:nth-of-type(2) .box-thumb {
+  background-image: url(../images/dummy/dummy2.jpg);
+}
+
+.list-cont>li:nth-of-type(3) .box-thumb {
+  background-image: url(../images/dummy/dummy3.jpg);
+}
+
+.list-cont .box-txt {
+  padding: 20px 12px;
+}
+
+.list-banner {
+  display: block;
+}
+
+.list-cont__item .tit-item {
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  font-size: 1.6rem;
+}
+
+.list-cont__item .desc-item {
+  margin-top: 12px;
+  font-size: 1.4rem;
+}
+
+.banner-area {
+  padding-top: 80px;
+}
+
+.list-banner__item {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.link-banner::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  transition: .5s;
+}
+
+
+.link-banner {
+  display: block;
+  height: 100%;
+  padding: 24px 20px;
+  position: relative;
+  text-decoration: none;
+  color: var(--color-white);
+  background-size: auto 300px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: .5s;
+}
+
+.link-banner:hover,
+.link-banner:active,
+.link-banner:focus {
+  background-size: auto 350px;
+}
+
+
+.list-banner>li:nth-of-type(1) .link-banner {
+  background-image: url(../images/dummy/dummy4.jpg);
+}
+
+.list-banner>li:nth-of-type(2) .link-banner {
+  background-image: url(../images/dummy/dummy5.jpg);
+}
+
+.list-banner .box-txt {
+  display: block;
+  overflow: hidden;
+}
+
+.list-banner .tit-item {
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  font-size: 2.0rem;
+}
+
+.list-banner .desc-item {
+  overflow: hidden;
+  margin-top: 12px;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  font-size: 1.6rem;
+  color: var(--color-gray);
+}
+
+.btn--banner {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 0 28px;
+  font-size: 1.6rem;
+  line-height: 42px;
+  border: 1px solid var(--color-white);
+  border-radius: 21px;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.section-category {
+  padding: 120px 0;
+  background-color: var(--color-lightgray);
+}
+
+.tit-area {
+  position: relative;
+  padding-right: 220px;
+}
+
+.more-link {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  color: var(--color-bk);
+}
+
+.txt-link {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  max-width: 180px;
+  padding-right: 20px;
+  font-size: 1.6rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+
+.txt-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-bk);
+  z-index: -1;
+  transition: .5s;
+}
+
+.more-link:hover .txt-link::before,
+.more-link:active .txt-link::before,
+.more-link:focus .txt-link::before {
+  width: 100%;
+}
+
+.txt-link::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-gray);
+}
+
+.list-category {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+  padding: 20px 0;
+}
+
+.link-category {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--color-bk);
+}
+
+.list-category__item {
+  width: 50%;
+  padding: 8px;
+}
+
+.list-category .thumb-img{
+  width: 100%;
+}
+
+.list-category .box-txt {
+  border: 1px solid var(--color-gray);
+  border-width: 0 1px 1px 1px;
+  background-color: #fff;
+  padding: 20px 24px;
+}
+
+.list-category .tit-item {
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.map-area {
+  display: none;
+  width: 100%;
+  height: 500px;
+}
+
+@media screen and (min-width: 768px) { /* min Tablet */
+  .list-cont{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .list-banner{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .list-banner__item {
+    height: 300px;
+  }
+
+  .list-banner .box-txt{
+    position: absolute;
+    bottom: 40px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) { /* min pc */
+  .info-area {
+    max-width: 90%;
+  }
+  
+  .list-cont .box-txt {
+    padding: 32px 20px 12px;
+  }
+
+  .list-category {
+    max-width: 90%;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+  }
+
+  .list-category__item {
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  .map-area {
+    width: 100%;
+    height: 500px;
+  }
+
+  .list-banner .box-txt {
+    position: absolute;
+    bottom: 0 !important;
+    z-index: 1;
+    padding: 20px 24px;
+    transition: .5s;
+  }
+
+  .btn--banner{
+    opacity: 0;
+    transition: .5s;
+  }
+
+  .link-banner:hover::before,
+  .link-banner:active::before,
+  .link-banner:focus::before {
+    opacity: .5;
+  }
+  
+  .link-banner:hover .box-txt,
+  .link-banner:active .box-txt,
+  .link-banner:focus .box-txt {
+    bottom: 40px !important;
+  }
+  
+  .link-banner:hover .btn--banner,
+  .link-banner:active .btn--banner,
+  .link-banner:focus .btn--banner {
+    opacity: 1;
+  }
+
+  .map-area {
+    display: block;
+  }
+
+}
