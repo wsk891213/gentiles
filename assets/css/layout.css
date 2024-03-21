@@ -1,3 +1,21 @@
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #fff;
+  opacity: 0.5;
+  padding: 8rem 2rem;
+  border-radius: 20px;
+  color: black !important;
+  font-size: small;
+  vertical-align: center;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+}
+
+
 .doc-content {
   padding-top: 60px;
 }
@@ -135,7 +153,7 @@
   overflow: hidden;
   max-width: 100%;
   padding: 0 2px;
-  font-size: 2.0rem;
+  font-size: 1.7rem;
   white-space: nowrap;
   text-overflow: ellipsis;
   word-break: break-all;
@@ -146,7 +164,7 @@
   overflow: hidden;
   padding: 8px 0;
   max-height: 0;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   transition: .5s;
 }
 
@@ -379,7 +397,7 @@
   }
 
   .link-menu {
-    padding: 16px 12px 16px 52px;
+    padding: 20px 12px 16px 52px;
   }
 
   .link-menu::before {
@@ -395,10 +413,6 @@
 
   .link-menu::after {
     content: none;
-  }
-
-  .txt-menu{
-    font-size: 1.4rem;
   }
   
   .txt-menu::before {
