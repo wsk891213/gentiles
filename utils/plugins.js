@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 스와이퍼
     const swiper = document.querySelector('.swiper') && new Swiper(".swiper", {
            slidesPerView: 1,
-           spaceBetween: 30,
+           spaceBetween: 0,
            loop: true,
            pagination: {
              el: ".swiper-pagination",

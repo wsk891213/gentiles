@@ -1,4 +1,4 @@
-.swiper-button-prev,
+/* .swiper-button-prev,
 .swiper-button-next {
   background-color: #fff;
   opacity: 0.5;
@@ -13,7 +13,7 @@
 .swiper-button-next:after {
   font-size: 1.1rem !important;
   font-weight: 600 !important;
-}
+} */
 
 
 .doc-content {
@@ -451,10 +451,6 @@
   
   .nav-list__item {
     border-bottom: 1px solid var(--color-gray);
-  }
-  
-  .section-info {
-    padding-top: 240px;
   }
 
   .inner-section{

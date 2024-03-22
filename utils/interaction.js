@@ -16,7 +16,6 @@ const initialUI = () => {
 }
 
 
-
 // 브레이크포인트 수집
 let userDevice,
     isInitEvtYn = false;

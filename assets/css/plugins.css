@@ -35,16 +35,183 @@
 .swiper {
   margin-left: auto;
   margin-right: auto;
+  height: 450px;
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
+.swiper-slide{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.swiper::before{
+  content: '';
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0,0,0,.6) 0%, rgba(0,0,0,0) 100%);
+}
+
+.swiper::after{
+  content: '';
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.6) 100%);
+}
+
+.slide-item--01{
+  background-image: url(../images/main1.jpg);
+}
+
+.slide-item--02{
+  background-image: url(../images/main2.jpg);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
   content: '';
 }
+
+.swiper-button-prev > .txt-btn::before,
+.swiper-button-next > .txt-btn::before{
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  border: 3px solid #fff;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.swiper-button-prev > .txt-btn,
+.swiper-button-next > .txt-btn {
+  position: absolute;
+  line-height: 24px;
+  font-size: 1px;
+  line-height: 0;
+  color: transparent;
+  font-weight: 600;
+  text-shadow: 0 0 15px rgba(0,0,0,.6);
+}
+
+.swiper-button-prev > .txt-btn{
+  left: 0px;
+  padding-left: 25px;
+}
+
+.swiper-button-next > .txt-btn{
+  right: 0px;
+  padding-right: 25px;
+}
+
+.swiper-button-prev > .txt-btn::before {
+  left: 5px;
+  border-width: 0 0 2px 2px;
+}
+
+.swiper-button-next > .txt-btn::before {
+  right: 5px;
+  border-width: 2px 2px 0 0;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: var(--color-blue) !important;
+  box-shadow: 0 0 5px var(--color-blue);
+  opacity: 1 !important; 
+}
+
+.swiper-pagination-bullet{
+  background-color: #fff;
+  opacity: .6;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper {
+    height: 700px;
+  }
+
+  .swiper::before{
+    width: 140px;
+  }
+
+  .swiper::after{
+    width: 140px;
+  }
+  
+  .swiper-button-prev > .txt-btn,
+  .swiper-button-next > .txt-btn {
+    line-height: 30px;
+    font-size: 1.8rem;
+    color: #fff;
+  }
+
+  .swiper-button-prev > .txt-btn{
+    left: 20px;
+    padding-left: 30px;
+  }
+  
+  .swiper-button-next > .txt-btn{
+    right: 20px;
+    padding-right: 30px;
+  }
+  
+  .swiper-button-prev > .txt-btn::before {
+    left: 10px;
+    border-width: 0 0 2px 2px;
+  }
+  
+  .swiper-button-next > .txt-btn::before {
+    right: 10px;
+    border-width: 2px 2px 0 0;
+  }
+}
+
 
 
 @media screen and (min-width: 1024px) {
   .swiper {
     height: 100vh;
+  }
+
+  .swiper::before{
+    width: 200px;
+  }
+
+  .swiper::after{
+    width: 200px;
+  }
+
+  .swiper-button-prev > .txt-btn::before,
+  .swiper-button-next > .txt-btn::before{
+    width: 20px;
+    height: 20px;
+  }
+
+  .swiper-button-prev > .txt-btn{
+    left: 20px;
+    padding-left: 40px;
+  }
+  
+  .swiper-button-next > .txt-btn{
+    right: 20px;
+    padding-right: 40px;
+  }
+  
+  .swiper-button-prev > .txt-btn::before {
+    left: 20px;
+    border-width: 0 0 2px 2px;
+  }
+  
+  .swiper-button-next > .txt-btn::before {
+    right: 20px;
+    border-width: 2px 2px 0 0;
   }
 }
