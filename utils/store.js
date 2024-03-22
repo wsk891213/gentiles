@@ -5,6 +5,136 @@ console.log('===============================================================');
 console.log('STORE JS IMPORT');
 console.log('===============================================================');
 
+var tmpData = [
+  {
+    "id" : "1",
+    "category" : "SPACE",
+    "src" : "/assets/images/dummy/dummy6.jpg",
+    "title" : "SPACE",
+    "desc" : "SPACE"
+  },
+  {
+    "id" : "2",
+    "category" : "SPACE",
+    "src" : "/assets/images/dummy/dummy7.jpg",
+    "title" : "SPACE",
+    "desc" : "SPACE"
+  },
+  {
+    "id" : "3",
+    "category" : "SPACE",
+    "src" : "/assets/images/dummy/dummy8.jpg",
+    "title" : "SPACE",
+    "desc" : "SPACE"
+  },
+  {
+    "id" : "4",
+    "category" : "SPACE",
+    "src" : "/assets/images/dummy/dummy9.jpg",
+    "title" : "SPACE",
+    "desc" : "SPACE"
+  },
+  {
+    "id" : "5",
+    "category" : "SPACE",
+    "src" : "/assets/images/dummy/dummy6.jpg",
+    "title" : "SPACE",
+    "desc" : "SPACE"
+  },
+  {
+    "id" : "6",
+    "category" : "SPACE",
+    "src" : "/assets/images/dummy/dummy7.jpg",
+    "title" : "SPACE",
+    "desc" : "SPACE"
+  },
+  {
+    "id" : "7",
+    "category" : "SPACE",
+    "src" : "/assets/images/dummy/dummy8.jpg",
+    "title" : "SPACE",
+    "desc" : "SPACE"
+  },
+  {
+    "id" : "8",
+    "category" : "SPACE",
+    "src" : "/assets/images/dummy/dummy8.jpg",
+    "title" : "SPACE",
+    "desc" : "SPACE"
+  },
+  {
+    "id" : "9",
+    "category" : "SPACE",
+    "src" : "/assets/images/dummy/dummy9.jpg",
+    "title" : "SPACE",
+    "desc" : "SPACE"
+  },
+  {
+    "id" : "10",
+    "category" : "SPACE",
+    "src" : "/assets/images/dummy/dummy6.jpg",
+    "title" : "SPACE",
+    "desc" : "SPACE"
+  },
+  {
+    "id" : "11",
+    "category" : "Coffee & Beverage",
+    "src" : "/assets/images/dummy/dummy7.jpg",
+    "title" : "Coffee & Beverage",
+    "desc" : "Coffee & Beverage"
+  },
+  {
+    "id" : "12",
+    "category" : "Coffee & Beverage",
+    "src" : "/assets/images/dummy/dummy8.jpg",
+    "title" : "Coffee & Beverage",
+    "desc" : "Coffee & Beverage"
+  },
+  {
+    "id" : "13",
+    "category" : "Coffee & Beverage",
+    "src" : "/assets/images/dummy/dummy9.jpg",
+    "title" : "Coffee & Beverage",
+    "desc" : "Coffee & Beverage"
+  },
+  {
+    "id" : "14",
+    "category" : "Coffee & Beverage",
+    "src" : "/assets/images/dummy/dummy6.jpg",
+    "title" : "Coffee & Beverage",
+    "desc" : "Coffee & Beverage"
+  },
+  {
+    "id" : "15",
+    "category" : "Bakery",
+    "src" : "/assets/images/dummy/dummy6.jpg",
+    "title" : "Bakery",
+    "desc" : "Bakery"
+  },
+  {
+    "id" : "16",
+    "category" : "Bakery",
+    "src" : "/assets/images/dummy/dummy7.jpg",
+    "title" : "Bakery",
+    "desc" : "Bakery"
+  },
+  {
+    "id" : "17",
+    "category" : "Kitchen",
+    "src" : "/assets/images/dummy/dummy6.jpg",
+    "title" : "Kitchen",
+    "desc" : "Kitchen"
+  },
+  {
+    "id" : "18",
+    "category" : "Kitchen",
+    "src" : "/assets/images/dummy/dummy7.jpg",
+    "title" : "Kitchen",
+    "desc" : "Kitchen"
+  }
+]
+
+
 const prdDataParse = (json) => {
   let parseData = {};
 
@@ -114,17 +244,18 @@ const prdDataParse = (json) => {
 
 
 const getProductInfo = async() => {
+  prdDataParse(tmpData);
 
-    try {
-      const response = await fetch(`/store/branch_a/product.json`);
-      if (!response.ok) {
-        throw new Error('인서트 오류');
-      }
-      const json = await response.json();
-      prdDataParse(json);
-    } catch (error) {
-      console.error('인서트 정보 오류:', error);
-    }
+    // try {
+    //   const response = await fetch(`../store/branch_a/product.json`);
+    //   if (!response.ok) {
+    //     throw new Error('인서트 오류');
+    //   }
+    //   const json = await response.json();
+    //   prdDataParse(json);
+    // } catch (error) {
+    //   console.error('인서트 정보 오류:', error);
+    // }
 }
 
 
