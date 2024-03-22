@@ -74,6 +74,14 @@
   background-image: url(../images/main2.jpg);
 }
 
+.slide-item--03{
+  background-image: url(../images/main3.jpg);
+}
+
+.slide-item--04{
+  background-image: url(../images/main4.jpg);
+}
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
   content: '';

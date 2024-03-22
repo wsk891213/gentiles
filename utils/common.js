@@ -1,9 +1,9 @@
+
 'use strict';
 
 console.log('===============================================================');
 console.log('COMMON JS IMPORT');
 console.log('===============================================================');
-
 
 // 공통 컴포넌트 include Start
 const includeEl = document.querySelectorAll('[data-include-path]');
@@ -17,13 +17,24 @@ includeEl.forEach((item) => {
                 const htmlContent = this.responseText;
                 const tempEl = document.createElement('div');
                 tempEl.innerHTML = htmlContent;
+
+                // Include CSS files by searching for <link> tags and appending them to the document head
+                const cssLinks = tempEl.querySelectorAll('link[rel="stylesheet"]');
+                cssLinks.forEach(link => {
+                    const newLink = document.createElement('link');
+                    newLink.rel = link.rel;
+                    newLink.href = link.href;
+                    document.head.appendChild(newLink);
+                });
+
+                // Include JavaScript by creating new script elements for each <script> tag found
                 const scripts = tempEl.querySelectorAll('script');
                 scripts.forEach(script => {
-                    // Create a new script element and execute the script content
                     const newScript = document.createElement('script');
                     newScript.text = script.text;
                     document.body.appendChild(newScript);
                 });
+
                 // Append the HTML content to the current document
                 item.outerHTML = htmlContent;
             }
