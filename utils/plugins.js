@@ -7,6 +7,16 @@ console.log('===============================================================');
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    var script = document.createElement('script');
+    script.src = "//dapi.kakao.com/v2/maps/sdk.js?appkey=6a1de1fd203bad5159083c3977081577&autoload=false";
+    document.head.appendChild(script);
+
+    // 스크립트 로딩이 완료되면 콜백 함수 실행
+    script.onload = () => initMap();
+});
+
+function initMap() {
+  kakao.maps.load(function() {
     // 카카오 지도 API
     const map = document.getElementById('map'),
           options = { 
@@ -44,5 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
              prevEl: ".swiper-button-prev",
            },
     });
-   
-});
+
+  });
+}
