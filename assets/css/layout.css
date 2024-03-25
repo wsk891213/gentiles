@@ -400,6 +400,19 @@
     padding: 20px 12px 16px 52px;
   }
 
+  .nav-list .nav-list__item:nth-of-type(1) > .link-menu::before{
+    content: 'home';
+  }
+  .nav-list .nav-list__item:nth-of-type(2) > .link-menu::before{
+    content: 'logout';
+  }
+  .nav-list .nav-list__item:nth-of-type(3) > .link-menu::before{
+    content: '';
+  }
+  .nav-list .nav-list__item:nth-of-type(4) > .link-menu::before{
+    content: '';
+  }
+
   .link-menu::before {
     content: '';
     position: absolute;
@@ -407,8 +420,20 @@
     left: 18px;
     width: 24px;
     height: 24px;
-    background-color: var(--color-gray);
     transform: translateY(-50%);
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
   }
 
   .link-menu::after {
