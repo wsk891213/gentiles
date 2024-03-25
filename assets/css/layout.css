@@ -407,10 +407,10 @@
     content: 'logout';
   }
   .nav-list .nav-list__item:nth-of-type(3) > .link-menu::before{
-    content: '';
+    content: 'home';
   }
   .nav-list .nav-list__item:nth-of-type(4) > .link-menu::before{
-    content: '';
+    content: 'home';
   }
 
   .link-menu::before {
