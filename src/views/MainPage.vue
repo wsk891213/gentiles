@@ -11,9 +11,9 @@ export default {
 }
 </script>
 
+
 <style scoped>
 .home {
   text-align: center;
-  padding: 2rem;
 }
 </style>

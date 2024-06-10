@@ -23,4 +23,5 @@ export default {
 
 <style>
 /* 여기에 전역 스타일을 추가할 수 있습니다. */
+@import './assets/css/styles.css';
 </style>
