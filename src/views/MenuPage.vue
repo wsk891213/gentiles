@@ -1,19 +1,18 @@
 <template>
-  <div class="home">
-    <h1>Welcome to Gentiles</h1>
-    <p>Your perfect place to relax and enjoy coffee.</p>
+  <div class="MenuPage">
+    <h1>MenuPage</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'MainPage'
+  name: 'MenuPage'
 }
 </script>
 
 
 <style scoped>
-.home {
+.MenuPage {
   text-align: center;
 }
 </style>

@@ -1,19 +1,18 @@
 <template>
-  <div class="home">
-    <h1>Welcome to Gentiles</h1>
-    <p>Your perfect place to relax and enjoy coffee.</p>
+  <div class="LocationPage">
+    <h1>LocationPage</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'MainPage'
+  name: 'LocationPage'
 }
 </script>
 
 
 <style scoped>
-.home {
+.LocationPage {
   text-align: center;
 }
 </style>

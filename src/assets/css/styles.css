@@ -10902,6 +10902,8 @@ p {
   font-size: 0.95rem;
   color: #055B2E;
   letter-spacing: 0.0625em;
+  padding-left: 1rem;
+  padding-right: 1.5rem;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #ffc800;
@@ -10909,8 +10911,8 @@ p {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1.0rem;
+    padding-bottom: 1.0rem;
     border: none;
     background-color: transparent;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
@@ -10947,7 +10949,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/main/main1.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
