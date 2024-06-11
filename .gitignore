@@ -23,7 +23,6 @@ pnpm-debug.log*
 
 # Build and distribution folders
 /build
-/public
 
 # Test coverage
 coverage/
