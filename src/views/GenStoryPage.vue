@@ -1,18 +1,16 @@
 <template>
-  <div class="CafeStoryPage">
+  <div class="GenStoryPage">
     <h1>CafeStoryPage</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'CafeStoryPage'
+  name: 'GenStoryPage'
 }
 </script>
 
 
 <style scoped>
-.CafeStoryPage {
-  text-align: center;
-}
+@import '../assets/css/genstory.css';
 </style>

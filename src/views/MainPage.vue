@@ -15,7 +15,5 @@ export default {
 
 
 <style scoped>
-.home {
-  text-align: center;
-}
+@import '../assets/css/main.css';
 </style>

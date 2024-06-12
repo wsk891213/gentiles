@@ -1,7 +1,6 @@
 <template>
   <div class="MenuPage">
     <section class="section-store">
-      <section class="section-menu">
         <h2 id="titTab b0V4U7" class="blind"></h2>
         <div class="box-tabmenu">
             <ul class="list-tabmenu" role="tablist" aria-labelledby="titTab">
@@ -15,7 +14,6 @@
         <div class="box-tabpanel">
             <component :is="currentComponent"></component>
         </div>
-    </section>
   </section>
   </div>
 </template>

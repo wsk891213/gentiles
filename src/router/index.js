@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import MainPage from '../views/MainPage.vue'
-import CafeStoryPage from '../views/CafeStoryPage.vue'
+import GenStoryPage from '../views/GenStoryPage.vue'
 import LocationPage from '../views/LocationPage.vue'
 import MenuPage from '../views/MenuPage.vue'
 import SpacePage from '../views/SpacePage.vue'
@@ -13,7 +13,7 @@ import MenuPageSub5 from '../views/MenuPageSub5.vue'
 
 const routes = [
   { path: '/', component: MainPage },
-  { path: '/cafeStory-page', component: CafeStoryPage },
+  { path: '/genStory-page', component: GenStoryPage },
   { path: '/location-page', component: LocationPage },
   { path: '/menu-page', component: MenuPage },
   { path: '/space-page', component: SpacePage },

@@ -12,7 +12,5 @@ export default {
 
 
 <style scoped>
-.SpacePage {
-  text-align: center;
-}
+@import '../assets/css/space.css';
 </style>
