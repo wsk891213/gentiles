@@ -164,11 +164,6 @@ h6, .h6 {
   font-size: 1rem;
 }
 
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
 abbr[title] {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
@@ -10831,10 +10826,6 @@ html {
 
 body {
   position: relative;
-}
-
-p {
-  line-height: 1.75;
 }
 
 .page-section {

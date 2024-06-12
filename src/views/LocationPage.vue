@@ -4,20 +4,20 @@
       <div class="row">
         <div class="col-md-5 location-info">
           <h3 class="text-uppercase">오시는길 (Location)</h3>
-          <h4 class="text-muted">제주 서귀포시 표선면 표선당포로 7 7 Pyoseondangpo-ro, Pyoseonmyeon, Seogwipo-si, Jeju-do</h4>
+          <p class="location-txt">제주 서귀포시 표선면 표선당포로 7 7 Pyoseondangpo-ro, Pyoseonmyeon, Seogwipo-si, Jeju-do</p>
           <br/>
           <h3 class="text-uppercase">영업시간 Open</h3>
-          <h4 class="text-muted">am 10:00 ~ pm 9:00</h4>
-          <h3 class="text-uppercase">라스트오더</h3>
-          <h4 class="text-muted">pm 8:30</h4>
+          <p class="location-txt">am 10:00 ~ pm 9:00</p>
           <br/>
-          <h4 class="text-muted">일요일 휴무 (Sunday Closed)</h4>
+          <h3 class="text-uppercase">라스트오더</h3>
+          <p class="location-txt">pm 8:30</p>
+          <p class="location-txt">일요일 휴무 (Sunday Closed)</p>
           <br/>
           <h3 class="text-uppercase">TEL</h3>
-          <h4 class="text-muted">064-803-0032</h4>
+          <p class="location-txt">064-803-0032</p>
           <br/>
           <h3 class="text-uppercase">Instagram</h3>
-          <h4 class="text-muted">Cafe_gentiles_pyoseon</h4>
+          <p class="location-txt">Cafe_gentiles_pyoseon</p>
         </div>
         <div class="col-md-7">
           <div id="map"></div>
@@ -25,12 +25,11 @@
       </div>
    </section>
   </div>
+  <component :is="FooterPage"></component>
 </template>
 
-
-
-
 <script>
+import FooterPage from '../components/FooterPage.vue'
 export default {
   name: 'LocationPage',
   mounted() {
@@ -67,6 +66,13 @@ export default {
           // 마커가 지도 위에 표시되도록 설정합니다
           marker.setMap(kakaoMap);
       }
+    }
+  },components: {
+    FooterPage
+  },
+  data() {
+    return {
+      FooterPage: 'FooterPage'
     }
   }
 };

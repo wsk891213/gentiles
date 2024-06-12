@@ -36,8 +36,5 @@ export default {
 </script>
 
 <style scoped>
-header {
-  background-color: white;
-  padding: 2.5rem;
-}
+@import '../assets/css/header.css';
 </style>

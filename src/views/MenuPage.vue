@@ -15,6 +15,7 @@
             <component :is="currentComponent"></component>
         </div>
   </section>
+  <component :is="FooterPage"></component>
   </div>
 </template>
 
@@ -24,6 +25,7 @@ import MenuPageSub2 from '../views/MenuPageSub2.vue'
 import MenuPageSub3 from '../views/MenuPageSub3.vue'
 import MenuPageSub4 from '../views/MenuPageSub4.vue'
 import MenuPageSub5 from '../views/MenuPageSub5.vue'
+import FooterPage from '../components/FooterPage.vue'
 
 
 export default {
@@ -33,16 +35,17 @@ export default {
     MenuPageSub2, 
     MenuPageSub3, 
     MenuPageSub4, 
-    MenuPageSub5
+    MenuPageSub5,
+    FooterPage
   },
   data() {
     return {
-      currentComponent: 'MenuPageSub1'
+      currentComponent: 'MenuPageSub1',
+      FooterPage: 'FooterPage'
     }
   }
 }
 </script>
-
 
 <style scoped>
 @import '../assets/css/menu.css';
