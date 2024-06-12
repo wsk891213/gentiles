@@ -34,6 +34,6 @@
     
     
     <style scoped>
-    @import '../assets/css/menu.css';
+    
     </style>
     
