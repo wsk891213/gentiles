@@ -1,1 +1,9 @@
 /* 여기에 각 해당 페이지에 적용될 css 작성 */
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
