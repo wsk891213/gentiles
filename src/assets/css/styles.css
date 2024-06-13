@@ -635,6 +635,7 @@ progress {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
+  border: 1px solid red;
 }
 
 @media (min-width: 576px) {
@@ -10846,7 +10847,7 @@ body {
 
 @media (min-width: 768px) {
   section {
-    padding: 9rem 0;
+    /*padding: 9rem 0;*/
   }
 }
 .btn-xl {
@@ -10904,9 +10905,10 @@ body {
   #mainNav {
     padding-top: 2.0rem;
     padding-bottom: 1.0rem;
-    border: none;
+    border: 2px solid blue;
     background-color: white;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
   }
   #mainNav .navbar-brand {
     font-size: 1.5em;
@@ -10936,15 +10938,16 @@ body {
   }
 }
 header.masthead {
-  padding-top: 10.5rem;
-  padding-bottom: 6rem;
+  /*padding-top: 10.5rem;*/
+  /*padding-bottom: 6rem;*/
   text-align: center;
   color: #fff;
-  background-image: url("../img/main/main1.png");
+  /*background-image: url("../img/main/main1.png");*/
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  border: 1px solid black;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
@@ -10963,8 +10966,8 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 17rem;
-    padding-bottom: 12.5rem;
+    /*padding-top: 17rem;*/
+    /*padding-bottom: 12.5rem;*/
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;

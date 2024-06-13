@@ -1,1 +1,4 @@
 /* 여기에 각 해당 페이지에 적용될 css 작성 */
+.GenStoryPage {
+    border: 1px solid red;
+}
