@@ -3816,9 +3816,9 @@ textarea.form-control-lg {
   padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
   font-size: var(--bs-navbar-toggler-font-size);
   line-height: 1;
-  color: var(--bs-navbar-color);
+  color: #055B2E;
   background-color: transparent;
-  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  border: var(--bs-border-width) solid #055B2E;
   border-radius: var(--bs-navbar-toggler-border-radius);
   transition: var(--bs-navbar-toggler-transition);
 }
@@ -4140,7 +4140,7 @@ textarea.form-control-lg {
   --bs-navbar-active-color: #fff;
   --bs-navbar-brand-color: #fff;
   --bs-navbar-brand-hover-color: #fff;
-  --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
+  --bs-navbar-toggler-border-color: white;
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
@@ -10869,7 +10869,7 @@ body {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #212529;
+  background-color: white;
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -10893,11 +10893,12 @@ body {
   font-size: 1.5rem;
   color: #055B2E;
   letter-spacing: 0.0625em;
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
   padding-right: 4.0rem;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #ffc800;
+  margin-top: -2px;
 }
 
 @media (min-width: 992px) {
@@ -10919,7 +10920,7 @@ body {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #212529;
+    background-color: white;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;

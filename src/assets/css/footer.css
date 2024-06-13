@@ -1,15 +1,15 @@
+/* 여기에 각 해당 페이지에 적용될 css 작성 */
 .footerPage {
   background-color: #055B2E;
   color: white;
-  text-align: left;
   font-size: 1.0rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  padding: 3rem 6rem 3rem;
-  height: 100%;
+  padding: 2rem 5rem;
+  text-align: center;
 }
 
 .footer-info {
-  padding: 0rem 6rem;
+  padding: 2rem 0rem 0rem;
   line-height: 1.8;
 }
 
@@ -21,4 +21,23 @@
 .footer-img img{
   height: 100%;
   width: 100%;
+}
+
+@media screen and (min-width: 1024px) { /* min PC */
+
+  .footerPage {
+    background-color: #055B2E;
+    color: white;
+    text-align: left;
+    font-size: 1.0rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    padding: 3rem 6rem 3rem;
+    height: 100%;
+  }
+
+  .footer-info {
+    padding: 1rem 6rem 0rem;
+    line-height: 1.8;
+  }
+
 }

@@ -2,7 +2,7 @@
   <div class="LocationPage">
     <section class="section-location">
       <div class="row">
-        <div class="col-md-5 location-info">
+        <div class="col-md-6 location-info">
           <h3 class="text-uppercase">오시는길 (Location)</h3>
           <p class="location-txt">제주 서귀포시 표선면 표선당포로 7 7 Pyoseondangpo-ro, Pyoseonmyeon, Seogwipo-si, Jeju-do</p>
           <br/>
@@ -19,7 +19,7 @@
           <h3 class="text-uppercase">Instagram</h3>
           <p class="location-txt">Cafe_gentiles_pyoseon</p>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-6">
           <div id="map"></div>
         </div>
       </div>

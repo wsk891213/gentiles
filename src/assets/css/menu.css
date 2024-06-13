@@ -1,54 +1,21 @@
 /* 여기에 각 해당 페이지에 적용될 css 작성 */
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.section-store {
+  padding: 10rem 2rem 5rem;
 }
 
 ul, ol {
   list-style-type: none; /* 모든 ul, ol 태그의 마커 제거 */
 }
 
-.list-info {
-  margin: 0;
-  padding: 0;
-  margin-top: 20px;
-  color: var(--color-darkgray);
-}
-
-.list-info > div {
-  overflow: hidden;
-}
-
-.list-info > div + div{
-  margin-top: 8px;
-}
-
-.list-info dt:not(.blind) + dd {
-  margin-left: 10px;
-}
-
-.list-info dt,
-.list-info dd {
-  float: left;
-  margin: 0;
-  padding: 0;
-  font-size: 1.6rem;
-}
-
-.section-menu {
-  padding: 20px 20px 40px;
-}
-
-.box-tabmenu{
+.box-tabmenu {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   border-bottom: 1px solid var(--color-lightgray);
-  padding: 0 20px;
+  padding: 0rem 2rem;
   margin: 0 -20px;
   white-space: nowrap;
   overflow-y: hidden;
@@ -72,13 +39,13 @@ ul, ol {
   text-align: center;
   cursor: pointer;
   font-size: 1.5rem;
+  transition: .2s;
 }
 
-.list-tabmenu .btn-tab:hover {
-  bottom: -1px;
-  height: 2px;
+.list-tabmenu .btn-tab:not(.btn-tab--active):hover {
   width: 100%;
-  color: #055B2E;
+  margin-top: -2px;
+  color: #ffc800;
 }
 
 .list-tabmenu .btn-tab--active {
@@ -86,11 +53,12 @@ ul, ol {
   color: #055B2E;
 }
 
+
 .list-tabmenu .btn-tab--active::before{
   content: '';
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: -2px;
   height: 2px;
   width: 100%;
   background-color: #055B2E;
