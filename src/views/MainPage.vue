@@ -91,7 +91,7 @@ export default {
 }
 .slider-container {
   width: 100%;
-  //height: 100vh;
+  /* height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,7 +116,7 @@ export default {
   background: #fff !important;
   opacity: 0.7;
   transition: opacity 0.3s;
-  //cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .swiper-pagination >>> .swiper-pagination-bullet-active {
