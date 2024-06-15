@@ -13,10 +13,10 @@ import MenuPageSub5 from '../views/MenuPageSub5.vue'
 
 const routes = [
   { path: '/', component: MainPage },
-  { path: '/genStory-page', component: GenStoryPage },
-  { path: '/location-page', component: LocationPage },
-  { path: '/menu-page', component: MenuPage },
-  { path: '/space-page', component: SpacePage },
+  { path: '/gen-story', component: GenStoryPage },
+  { path: '/location', component: LocationPage },
+  { path: '/menu', component: MenuPage },
+  { path: '/space', component: SpacePage },
   { path: '/menu-sub1', component: MenuPageSub1 },
   { path: '/menu-sub2', component: MenuPageSub2 },
   { path: '/menu-sub3', component: MenuPageSub3 },
