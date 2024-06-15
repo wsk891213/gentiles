@@ -1,9 +1,156 @@
 /* 여기에 각 해당 페이지에 적용될 css 작성 */
-.image-container {
+.home {
+    /*padding-top: 5rem;*/
+}
+
+/* swiper */
+.slider-section {
+    /*width: 100%;*/
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /*border: 1px solid red;*/
+    margin-top: 1rem;
+}
+.slider-section .slider {
+    display: flex;
+    /*border: 2px solid greenyellow;*/
+    height: 100vh;
+}
+.slider-section .slider-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    border: 1px solid white;
+}
+/*@media screen and (min-width: 1024px){*/
+/*    .slider-container {*/
+/*        height: 80vh;*/
+
+/*    }*/
+/*    .slider-image {*/
+/*        height: 80vh;*/
+/*        object-position: center;*/
+/*        object-fit: cover;*/
+/*        !*border: 2px solid yellow;*!*/
+/*    }*/
+/*}*/
+
+/*-----------------------------*/
+/*.img-fluid {*/
+/*    max-width: 100%;*/
+/*    height: auto;*/
+/*}*/
+/* swiper 하단 */
+.swiper-pagination {
+    padding-bottom: 1.5rem;
+}
+.swiper-pagination-bullet {
+    background: #fff !important;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+    background: green !important;
+    opacity: 1;
+    width: 1rem;
+    border-radius: 4px;
+    transition: width .5s;
+}
+
+/* gen-story sections */
+.main-section-row {
+    height: 70vh;
+}
+.main-section {
+    height: 100vh;
+    padding: 10rem 10rem 1rem 10rem; /* section 패딩*/
     display: flex;
     justify-content: center;
+    align-items: center;
+    /*scroll-snap-align: start;*/
+    background-color: #f0f0f0;
+    /*border: 1px solid purple;*/
 }
+.main-section-text {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+    height: 100%;
+    padding-right: 2rem; /*사진과 거리*/
+    white-space: pre-wrap;
+}
+.main-section-img {
+    padding-left: 2rem; /*텍스트와 거리*/
+    display: flex;
+    justify-content: end;
+    height: 100%;
+}
+
+@media (min-width: 1024px) {
+    .main-section-row {
+        height: 70vh;
+    }
+    .main-section {
+        height: 100vh;
+        padding: 10rem 10rem 1rem 10rem; /* section 패딩*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*scroll-snap-align: start;*/
+        background-color: #f0f0f0;
+        /*border: 1px solid purple;*/
+    }
+    .main-section-text {
+        /*display: flex;*/
+        /*justify-content: end;*/
+        /*align-items: start;*/
+        /*flex-direction: column;*/
+        height: 100%;
+        /*padding-right: 2rem; !*사진과 거리*!*/
+        white-space: pre-wrap;
+    }
+    .main-section-img {
+        /*padding-left: 2rem; !*텍스트와 거리*!*/
+        /*display: flex;*/
+        /*justify-content: end;*/
+        height: 100%;
+    }
+}
+
+.mainpage-footer {
+    height: 20vh;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*scroll-snap-align: start;*/
+    background-color: #f0f0f0;
+    /*text-after-overflow: center;*/
+    /*border: 1px solid purple;*/
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
 .img-fluid {
     max-width: 100%;
-    height: auto;
+    height: 100vh;
+    object-fit: cover;
+
 }
