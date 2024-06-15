@@ -635,7 +635,7 @@ progress {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 @media (min-width: 576px) {
@@ -10906,30 +10906,30 @@ body {
   #mainNav {
     padding-top: 2.0rem;
     padding-bottom: 1.0rem;
-    border: 2px solid blue;
+    /*border: 1px solid blue;*/
     background-color: white;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
   }
   #mainNav .navbar-brand {
     font-size: 1.5em;
-    transition: font-size 0.3s ease-in-out;
+    /*transition: font-size 0.3s ease-in-out;*/
   }
   #mainNav .navbar-brand img {
     height: 2rem;
-    transition: height 0.3s ease-in-out;
+    /*transition: height 0.3s ease-in-out;*/
   }
   #mainNav.navbar-shrink {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: white;
+    /*padding-top: 1rem;*/
+    /*padding-bottom: 1rem;*/
+    /*background-color: white;*/
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
   }
   #mainNav.navbar-shrink .navbar-brand svg,
   #mainNav.navbar-shrink .navbar-brand img {
-    height: 1.5rem;
+    /*height: 1.5rem;*/
   }
   #mainNav .navbar-nav .nav-item {
     margin-right: 1rem;
@@ -10939,7 +10939,7 @@ body {
   }
 }
 header.masthead {
-  /*padding-top: 10.5rem;*/
+  padding-top: 10.5rem;
   /*padding-bottom: 6rem;*/
   text-align: center;
   color: #fff;
@@ -10948,7 +10948,7 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
