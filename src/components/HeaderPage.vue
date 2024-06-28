@@ -9,8 +9,8 @@
                 <i class="fas fa-bars ms-1"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                  <li class="nav-item"><router-link to="/gen-story" class="nav-link">GENstory</router-link></li>
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                  <li class="nav-item"><router-link to="/gen-story" class="nav-link">Genstory</router-link></li>
                   <li class="nav-item"><router-link to="/space" class="nav-link">공간소개</router-link></li>
                   <li class="nav-item"><router-link to="/menu" class="nav-link">메뉴</router-link></li>
                   <li class="nav-item"><router-link to="/location" class="nav-link">오시는길</router-link></li>
