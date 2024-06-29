@@ -22,37 +22,37 @@
 </template>
 
 <script>
-import { ScrollSpy } from 'bootstrap';
+// import { ScrollSpy } from 'bootstrap';
 
 export default {
   name: 'HeaderPage',
   mounted() {
-    this.navbarShrink();
+    // this.navbarShrink();
     document.addEventListener('scroll', this.navbarShrink);
     this.initScrollSpy();
     this.initResponsiveNav();
   },
   beforeUnmount() {
-    document.removeEventListener('scroll', this.navbarShrink);
+    // document.removeEventListener('scroll', this.navbarShrink);
   },
   methods: {
-    navbarShrink() {
-      const navbarCollapsible = document.querySelector('#mainNav');
-      if (!navbarCollapsible) return;
-
-      if (window.scrollY === 0) {
-        navbarCollapsible.classList.remove('navbar-shrink');
-      } else {
-        navbarCollapsible.classList.add('navbar-shrink');
-      }
-    },
+    // navbarShrink() {
+    //   const navbarCollapsible = document.querySelector('#mainNav');
+    //   if (!navbarCollapsible) return;
+    //
+    //   if (window.scrollY === 0) {
+    //     navbarCollapsible.classList.remove('navbar-shrink');
+    //   } else {
+    //     navbarCollapsible.classList.add('navbar-shrink');
+    //   }
+    // },
     initScrollSpy() {
       const mainNav = document.querySelector('#mainNav');
       if (mainNav) {
-        new ScrollSpy(document.body, {
-          target: '#mainNav',
-          rootMargin: '0px 0px -40%',
-        });
+        // new ScrollSpy(document.body, {
+        //   target: '#mainNav',
+        //   rootMargin: '0px 0px -40%',
+        // });
       }
     },
     initResponsiveNav() {
