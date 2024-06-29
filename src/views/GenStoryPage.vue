@@ -1,98 +1,48 @@
 <template>
-  <div class="GenStory">
-    <!-- GenStory Section 1 -->
-    <div class="gens-section">
-      <div class="gens-section-row row align-items-center">
-        <div class="gens-section-text col-md-6 order-md-1">
-          <h5>{{sections[0].subtitle}}</h5>
-          <h2>{{ sections[0].title }}</h2>
-          <p>{{ sections[0].text }}</p>
-          <a href="#" class="btn btn-primary">더 알아보기</a>
-        </div>
-        <div class="gens-section-img col-md-6 order-md-2">
-          <img :src="sections[0].image" alt="GenStory Image" class="img-fluid">
-        </div>
+  <div class="genstory">
+    <section class="row align-items-center section-genstory">
+      <div class="col-md-9 order-2 order-md-1 text-left genstory-text">
+        <h6 class="gens-color"><strong>Genstory</strong></h6>
+        <h2 class="font-weight-bold">
+          <span class="gens-color">Rejoice O, Gentiles with His people</span><br />
+          수제 디저트를 합리적인 가격에 즐길 수 있는<br /> 프리미엄 디저트 카페, 젠타일스
+        </h2>
+        <p>
+          젠타일스는 트렌드를 빠르게 포착하고 카페홈즈만의 독창적인 디저트로 전환하는 능력을 가지고 있습니다.<br/>
+          누군가가 만든 디저트를 판매하는 것이 아닌 카페홈즈의 모든 디저트는 자체 공장에서 직접 개발하고 제조하고 있습니다.
+        </p>
+        <p>
+          HACCP인증을 받아 철저하게 관리하는 자체공장에서 시장의 변화에 신속하게 대응할 수 있도록 끊임없이 디저트를 연구개발하며,<br/>
+          어느 매장에서나 동일한 맛과 즐거움 경험할 수 있습니다.
+        </p>
       </div>
-    </div>
+      <div class="col-md-3 order-1 order-md-2 genstory-img">
+        <img src="@/assets/img/main/main4.png" alt="Image" class="img-fluid">
+      </div>
+    </section>
 
-    <!-- Section 2 -->
-    <div class="gens-section">
-      <div class="gens-section-row row align-items-center">
-        <div class="gens-section-text col-md-6 order-md-1">
-          <h5>{{sections[1].subtitle}}</h5>
-          <h2>{{ sections[1].title }}</h2>
-          <p>{{ sections[1].text }}</p>
-          <a href="#" class="btn btn-primary">더 알아보기</a>
-        </div>
-        <div class="gens-section-img col-md-6 order-md-2">
-          <img :src="sections[1].image" alt="GenStory Image" class="img-fluid">
-        </div>
-      </div>
-    </div>
-
-    <!--     Section 3-->
-    <div class="gens-section">
-      <div class="gens-section-row row align-items-center">
-        <div class="gens-section-text col-md-6 order-md-1">
-          <h5>{{sections[2].subtitle}}</h5>
-          <h2>{{ sections[2].title }}</h2>
-          <p>{{ sections[2].text }}</p>
-          <a href="#" class="btn btn-primary">더 알아보기</a>
-        </div>
-        <div class="gens-section-img col-md-6 order-md-2">
-          <img :src="sections[2].image" alt="GenStory Image" class="img-fluid">
-        </div>
-      </div>
-    </div>
-
-    <div ref="footer">
-      <div class="gens-footer">
-        <div>
-          <!--          <h1>텍스트를 넣을 수 있습니다.</h1>-->
-        </div>
-      </div>
-      <component :is="FooterPage" ></component>
-    </div>
+    <footer class="footer">
+      <component :is="FooterPage"></component>
+    </footer>
   </div>
 </template>
 
 <script>
-import FooterPage from "../components/FooterPage.vue";
+import FooterPage from "@/components/FooterPage.vue";
 
 export default {
   name: 'gen-story',
   components: {
-    FooterPage,
+    FooterPage
   },
   data() {
     return {
-      sections: [
-        {
-          subtitle: 'Gentiles Story',
-          title: '젠스토리 1번째 이야기 입니다.\n텍스트를 추가해주세요.',
-          text: '하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니 이는 저를 믿는 자마다 멸망치 않고 영생을 얻게 하려 하심이니라. 하나님이 그 아들을 세상에 보내신 것은 세상을 심판하려 하심이 아니요 저로 말미암아 세상이 구원을 받게하려 하심이라.',
-          image: require('@/assets/img/main/main2.png'),
-        },
-        {
-          subtitle: 'Gentiles Story',
-          title: '젠스토리 2번째 이야기\n텍스트를 추가해주세요.',
-          text: '하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니 이는 저를 믿는 자마다 멸망치 않고 영생을 얻게 하려 하심이니라. 하나님이 그 아들을 세상에 보내신 것은 세상을 심판하려 하심이 아니요 저로 말미암아 세상이 구원을 받게하려 하심이라.',
-          image: require('@/assets/img/main/main4.png'),
-        },
-        {
-          subtitle: 'Gentiles Story',
-          title: '젠스토리 3번째 이야기\n텍스트를 추가해주세요.',
-          text: '하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니 이는 저를 믿는 자마다 멸망치 않고 영생을 얻게 하려 하심이니라. 하나님이 그 아들을 세상에 보내신 것은 세상을 심판하려 하심이 아니요 저로 말미암아 세상이 구원을 받게하려 하심이라.',
-          image: require('@/assets/img/main/main5.png'),
-        },
-      ],
-      FooterPage,
-    };
-  },
+      FooterPage
+    }
+  }
 };
 </script>
 
 <style scoped>
-/* 기본 스타일 */
 @import '../assets/css/genstory.css';
 </style>
