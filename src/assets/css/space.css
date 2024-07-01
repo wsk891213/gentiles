@@ -1,61 +1,79 @@
 /* 여기에 각 해당 페이지에 적용될 css 작성 */
-/* 여기에 각 해당 페이지에 적용될 css 작성 */
 
-.space-page {
-    padding-top: 5rem;
+/* 기본 스타일 */
+.space {
+    padding-top: 6rem;
+    /*background-color: #f0f0f0;*/
 }
 /* gen-story sections */
 .sp-section-row {
-    /*height: 70vh;*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* 반응형 디자인을 위해 flex-wrap 추가 */
 }
 .sp-section {
-    height: 50vh;
+    height: 45vh;
     padding: 10rem 10rem 1rem 10rem; /* section 패딩*/
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
-    /*border: 1px solid purple;*/
 }
 .sp-section-text {
-    /*display: flex;*/
-    /*justify-content: end;*/
-    /*align-items: start;*/
-    /*flex-direction: column;*/
-    /*height: 100%;*/
-    /*padding-right: 2rem; !*사진과 거리*!*/
-    white-space: pre-wrap;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    order: 2; /* 기본적으로 텍스트를 아래로 배치 */
 }
 .sp-section-img {
-    padding-left: 2rem; /*텍스트와 거리*/
-    /*display: flex;*/
-    /*justify-content: end;*/
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 20rem;
+    order: 1; /* 기본적으로 이미지를 위로 배치 */
 }
-
-.sp-footer {
-    height: 20vh;
-    background-color: #f0f0f0;
-    /*border: 1px solid purple;*/
+.img-fluid {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
 }
 
 h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
 }
 
 p {
     font-size: 1.25rem;
-    margin-bottom: 20px;
 }
 
-.btn {
-    font-size: 1rem;
-    padding: 10px 20px;
+.footer {
+    margin-top: 8rem;
 }
 
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .space {
+        padding-top: 5rem; /* 헤더 높이를 고려한 패딩 */
+    }
+    .sp-section {
+        height: auto; /* 반응형에서 height를 auto로 설정 */
+        padding: 2rem 1rem; /* 반응형에서 padding 조정 */
+        margin-bottom: 2rem;
+    }
+    .sp-section-row {
+        flex-direction: column; /* flex 방향을 컬럼으로 변경 */
+        align-items: center; /* 아이템들을 가운데 정렬 */
+    }
+    .sp-section-img, .sp-section-text {
+        width: 100%; /* 반응형에서 width를 100%로 설정 */
+        height: auto; /* 반응형에서 height를 auto로 설정 */
+        order: 1; /* 이미지가 먼저 오도록 설정 */
+    }
+    .sp-section-text {
+        order: 2; /* 텍스트가 나중에 오도록 설정 */
+        margin-top: 1rem; /* 텍스트와 이미지 사이에 간격 추가 */
+    }
 }
