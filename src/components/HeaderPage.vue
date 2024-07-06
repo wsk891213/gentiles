@@ -3,7 +3,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="/"><img src="../assets/img/logos/logo_main.svg" alt="..." /></a>
+            <router-link class="navbar-brand" to="/"><img src="../assets/img/logos/logo_main.svg" alt="..." /></router-link>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars ms-1"></i>
