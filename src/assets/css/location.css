@@ -12,6 +12,10 @@
 .location-info{
     padding: 2rem 2rem 2rem;
 }
+
+.map-info {
+    height: 500px;
+}
  
 @media screen and (min-width: 1024px) { /* min PC */
     .section-location {
@@ -19,8 +23,10 @@
     }
     .location-info{
         padding: 3rem 2rem;
+    }    
+    .map-info {
+        height: 565px;
     }
-    
 }
 
 .location-txt{

@@ -19,7 +19,7 @@
           <h3 class="text-uppercase">Instagram</h3>
           <p class="location-txt">Cafe_gentiles_pyoseon</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 map-info">
           <div id="map"></div>
         </div>
       </div>
