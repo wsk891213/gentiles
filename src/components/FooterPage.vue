@@ -10,9 +10,10 @@
         <div class="col-md-10 footer-info">
           <strong class="tit-prd">카페 젠타일스</strong>
           <h8>주소 : 제주 서귀포시 표선면 표선당포로 7</h8><br/>
-          <h8>사업자등록번호 : 187-68-00743 | 대표자 : 김지원</h8><br/>
+          <h8>사업자등록번호 : 187-68-00743 | 대표자 : 이요한 | 사업자: 김지원, 최진이</h8><br/>
           <h8>TEL : 064-803-0032</h8><br/>
-          <h8>E-mail : gentilesmaster@gmail.com</h8>
+          <h8>E-mail : gentilesmaster@gmail.com</h8><br/><br/>
+          <h8>COPYRIGHT (C) 2024 GENTILES ALL RIGHTS RESERVED.</h8>
         </div>
       </div>  
     </div>
